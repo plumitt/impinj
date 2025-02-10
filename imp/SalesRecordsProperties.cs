@@ -7,8 +7,8 @@ public class SalesRecordsProperties
 {
     public decimal MedianUnitCost { get; set; }
     public string? MostCommonRegion { get; set; }
-    public DateTime FirstOrderDate { get; set; }
-    public DateTime LastOrderDate { get; set; }
+    public string FirstOrderDate { get; set; }
+    public string LastOrderDate { get; set; }
     public int DaysBetweenOrders { get; set; }
     public decimal TotalTotalRevenue { get; set; }
 
@@ -180,8 +180,8 @@ public class SalesRecordsPropertiesMaintainer
         }
         
         // Order Dates
-        properties.FirstOrderDate = firstOrderDate;
-        properties.LastOrderDate = lastOrderDate;
+        properties.FirstOrderDate = firstOrderDate.ToShortDateString();
+        properties.LastOrderDate = lastOrderDate.ToShortDateString();
         properties.DaysBetweenOrders = (lastOrderDate - firstOrderDate).Days;
         
         

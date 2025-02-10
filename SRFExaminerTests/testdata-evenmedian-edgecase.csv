@@ -1,0 +1,4 @@
+Region,Country,Item Type,Sales Channel,Order Priority,Order Date,Order ID,Ship Date,Units Sold,Unit Price,Unit Cost,Total Revenue,Total Cost,Total Profit
+A,Azerbaijan,Snacks,Online,C,10/8/2014,535113847,10/23/2014,2,20,20,40,40,0
+B,Panama,Cosmetics,Offline,L,10/8/2014,874708545,2/27/2015,3,30,30,90,90,0
+B,Panama,Cosmetics,Offline,L,10/8/2015,874708545,2/27/2015,1,10,10,10,10,0
